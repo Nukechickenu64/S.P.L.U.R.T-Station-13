@@ -4668,6 +4668,7 @@
 #include "modular_splurt\code\modules\mob\living\simple_animal\hostile\megafauna\king_of_goats.dm"
 #include "modular_splurt\code\modules\paperwork\pen.dm"
 #include "modular_splurt\code\modules\power\cell.dm"
+#include "modular_splurt\code\modules\power\cumweb.dm"
 #include "modular_splurt\code\modules\power\reactor\fluffed.dm"
 #include "modular_splurt\code\modules\projectiles\ammunition\ballistic\pistol.dm"
 #include "modular_splurt\code\modules\projectiles\ammunition\ballistic\smg.dm"
