@@ -66,7 +66,7 @@
 	if(!isturf(tturf))
 		return
 	if(get_dist(src, target) <= 7)//Screen range check, so you can't get tentacle'd offscreen
-		visible_message("<span class='warning'>[src] digs its tentacles under [target]!</span>")
+		visible_message("<span class='warning'>[src] digs its tentacles into [target]'s ass!</span>")
 		new /obj/effect/temp_visual/goliath_tentacle/original(tturf, src)
 		ranged_cooldown = world.time + ranged_cooldown_time
 		icon_state = icon_aggro
@@ -198,7 +198,8 @@
 			L.Stun(115)
 		else
 			L.Stun(75)
-		L.adjustBruteLoss(rand(15,20)) // Less stun more harm
+		if(L.carbon)
+			L.carbon.adjust_arousal(20)// Less stun more harm
 		latched = TRUE
 	for(var/obj/vehicle/sealed/mecha/M in loc)
 		M.take_damage(20, BRUTE, null, null, null, 25)
